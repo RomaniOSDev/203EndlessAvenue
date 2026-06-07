@@ -50,6 +50,13 @@
 		30BE56B62FCEBD7800ED4307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BE56842FCEBD7800ED4307 /* Assets.xcassets */; };
 		30BE56B82FCEBD7800ED4307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BE56882FCEBD7800ED4307 /* LaunchScreen.storyboard */; };
 		30BE56B92FCEBD7800ED4307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BE568A2FCEBD7800ED4307 /* Main.storyboard */; };
+		37DC6DB82FD579D20003A2AA /* PrivacyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6DB72FD579C20003A2AA /* PrivacyModels.swift */; };
+		37DC6DBA2FD579E20003A2AA /* PrivacyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6DB92FD579D80003A2AA /* PrivacyServices.swift */; };
+		37DC6DBC2FD579F10003A2AA /* PrivacyUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6DBB2FD579E50003A2AA /* PrivacyUpdateManager.swift */; };
+		37DC6DBE2FD579FE0003A2AA /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6DBD2FD579F90003A2AA /* PrivacyView.swift */; };
+		37DC6DC12FD57A5D0003A2AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 37DC6DC02FD57A5D0003A2AA /* Alamofire */; };
+		37DC6DC42FD57A730003A2AA /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 37DC6DC32FD57A730003A2AA /* AppsFlyerLib-Static */; };
+		37DC6DC72FD57BA40003A2AA /* EndlessAvenueMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6DC62FD57BA30003A2AA /* EndlessAvenueMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +106,12 @@
 		30BE56892FCEBD7800ED4307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30BE568B2FCEBD7800ED4307 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30BE568C2FCEBD7800ED4307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37DC6DB72FD579C20003A2AA /* PrivacyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyModels.swift; sourceTree = "<group>"; };
+		37DC6DB92FD579D80003A2AA /* PrivacyServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyServices.swift; sourceTree = "<group>"; };
+		37DC6DBB2FD579E50003A2AA /* PrivacyUpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyUpdateManager.swift; sourceTree = "<group>"; };
+		37DC6DBD2FD579F90003A2AA /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		37DC6DC52FD57AC20003A2AA /* 203EndlessAvenue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 203EndlessAvenue.entitlements; sourceTree = "<group>"; };
+		37DC6DC62FD57BA30003A2AA /* EndlessAvenueMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessAvenueMainView.swift; sourceTree = "<group>"; };
 		A354D5A69A01607AE2F795EA /* Pods-203EndlessAvenue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-203EndlessAvenue.release.xcconfig"; path = "Target Support Files/Pods-203EndlessAvenue/Pods-203EndlessAvenue.release.xcconfig"; sourceTree = "<group>"; };
 		F5BB5A7366B2176E6B6EBBEE /* Pods_203EndlessAvenue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_203EndlessAvenue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DC6DC12FD57A5D0003A2AA /* Alamofire in Frameworks */,
+				37DC6DC42FD57A730003A2AA /* AppsFlyerLib-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +200,7 @@
 		30BE565E2FCEBD7800ED4307 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				37DC6DB62FD5794C0003A2AA /* Services */,
 				30BE564F2FCEBD7800ED4307 /* Extensions */,
 				30BE56512FCEBD7800ED4307 /* Models */,
 				30BE56532FCEBD7800ED4307 /* Storage */,
@@ -307,6 +323,7 @@
 		30BE56802FCEBD7800ED4307 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				37DC6DC62FD57BA30003A2AA /* EndlessAvenueMainView.swift */,
 				30BE56602FCEBD7800ED4307 /* Achievements */,
 				30BE56652FCEBD7800ED4307 /* ConceptExplorer */,
 				30BE56672FCEBD7800ED4307 /* ConceptMap */,
@@ -335,6 +352,7 @@
 		30BE568D2FCEBD7800ED4307 /* 203EndlessAvenue */ = {
 			isa = PBXGroup;
 			children = (
+				37DC6DC52FD57AC20003A2AA /* 203EndlessAvenue.entitlements */,
 				30BE564D2FCEBD7800ED4307 /* Components */,
 				30BE565E2FCEBD7800ED4307 /* Core */,
 				30BE56802FCEBD7800ED4307 /* Features */,
@@ -349,6 +367,17 @@
 				30BE568C2FCEBD7800ED4307 /* ViewController.swift */,
 			);
 			path = 203EndlessAvenue;
+			sourceTree = "<group>";
+		};
+		37DC6DB62FD5794C0003A2AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				37DC6DBD2FD579F90003A2AA /* PrivacyView.swift */,
+				37DC6DBB2FD579E50003A2AA /* PrivacyUpdateManager.swift */,
+				37DC6DB92FD579D80003A2AA /* PrivacyServices.swift */,
+				37DC6DB72FD579C20003A2AA /* PrivacyModels.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		801E5447EF97E0DDA02186B5 /* Pods */ = {
@@ -413,6 +442,10 @@
 				Base,
 			);
 			mainGroup = 30BE55A32FCE15BA00ED4307;
+			packageReferences = (
+				37DC6DBF2FD57A5D0003A2AA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				37DC6DC22FD57A730003A2AA /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+			);
 			productRefGroup = 30BE55AD2FCE15BA00ED4307 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -474,9 +507,12 @@
 				30BE56932FCEBD7800ED4307 /* AppStorage.swift in Sources */,
 				30BE56942FCEBD7800ED4307 /* AppAppearance.swift in Sources */,
 				30BE56952FCEBD7800ED4307 /* AppDesignSystem.swift in Sources */,
+				37DC6DC72FD57BA40003A2AA /* EndlessAvenueMainView.swift in Sources */,
 				30BE56962FCEBD7800ED4307 /* AppLegalLinks.swift in Sources */,
 				30BE56972FCEBD7800ED4307 /* HapticManager.swift in Sources */,
+				37DC6DBE2FD579FE0003A2AA /* PrivacyView.swift in Sources */,
 				30BE56982FCEBD7800ED4307 /* PatternBackground.swift in Sources */,
+				37DC6DBC2FD579F10003A2AA /* PrivacyUpdateManager.swift in Sources */,
 				30BE56992FCEBD7800ED4307 /* ScreenStyles.swift in Sources */,
 				30BE569A2FCEBD7800ED4307 /* ShakeEffect.swift in Sources */,
 				30BE569B2FCEBD7800ED4307 /* SM2Scheduler.swift in Sources */,
@@ -484,6 +520,7 @@
 				30BE569D2FCEBD7800ED4307 /* AchievementsView.swift in Sources */,
 				30BE569E2FCEBD7800ED4307 /* AddTopicSheet.swift in Sources */,
 				30BE569F2FCEBD7800ED4307 /* ConceptExplorerView.swift in Sources */,
+				37DC6DBA2FD579E20003A2AA /* PrivacyServices.swift in Sources */,
 				30BE56A02FCEBD7800ED4307 /* ConceptExplorerViewModel.swift in Sources */,
 				30BE56A12FCEBD7800ED4307 /* EditTopicSheet.swift in Sources */,
 				30BE56A22FCEBD7800ED4307 /* ConceptMapView.swift in Sources */,
@@ -498,6 +535,7 @@
 				30BE56AB2FCEBD7800ED4307 /* QuickReviewView.swift in Sources */,
 				30BE56AC2FCEBD7800ED4307 /* ReviewDueTodayView.swift in Sources */,
 				30BE56AD2FCEBD7800ED4307 /* SettingsView.swift in Sources */,
+				37DC6DB82FD579D20003A2AA /* PrivacyModels.swift in Sources */,
 				30BE56AE2FCEBD7800ED4307 /* StudyHubView.swift in Sources */,
 				30BE56AF2FCEBD7800ED4307 /* TopicProgressView.swift in Sources */,
 				30BE56B02FCEBD7800ED4307 /* TopicProgressViewModel.swift in Sources */,
@@ -536,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 203EndlessAvenue/203EndlessAvenue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -554,7 +593,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bur.4ndl4ss9v4n93;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -577,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 203EndlessAvenue/203EndlessAvenue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -595,7 +635,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bur.4ndl4ss9v4n93;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -753,6 +793,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37DC6DBF2FD57A5D0003A2AA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+		37DC6DC22FD57A730003A2AA /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.18.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37DC6DC02FD57A5D0003A2AA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37DC6DBF2FD57A5D0003A2AA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		37DC6DC32FD57A730003A2AA /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37DC6DC22FD57A730003A2AA /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30BE55A42FCE15BA00ED4307 /* Project object */;
 }
